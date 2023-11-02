@@ -1,0 +1,63 @@
+{
+    "50": {
+      "Placement_Percentage": "more than 50%",
+      "Median_Placement_Package": "Less than 4 LPA"
+    },
+    "53": {
+      "Placement_Percentage": "Around 50-53%",
+      "Median_Placement_Package": "Around 4-5 LPA"
+    },
+    "56": {
+      "Placement_Percentage": "Around 53-56%",
+      "Median_Placement_Package": "Around 5-6 LPA"
+    },
+    "59": {
+      "Placement_Percentage": "Around 56-59%",
+      "Median_Placement_Package": "Around 6-7 LPA"
+    },
+    "62": {
+      "Placement_Percentage": "Around 59-62%",
+      "Median_Placement_Package": "Around 7-8 LPA"
+    },
+    "65": {
+      "Placement_Percentage": "Around 62-65%",
+      "Median_Placement_Package": "Around 8-9 LPA"
+    },
+    "68": {
+      "Placement_Percentage": "Around 65-68%",
+      "Median_Placement_Package": "Around 9-10 LPA"
+    },
+    "71": {
+      "Placement_Percentage": "Around 68-71%",
+      "Median_Placement_Package": "Around 10-11 LPA"
+    },
+    "74": {
+      "Placement_Percentage": "Around 71-74%",
+      "Median_Placement_Package": "Around 11-12 LPA"
+    },
+    "77": {
+      "Placement_Percentage": "Around 74-77%",
+      "Median_Placement_Package": "Around 12-13 LPA"
+    },
+    "80": {
+      "Placement_Percentage": "Around 77-80%",
+      "Median_Placement_Package": "Around 13-14 LPA"
+    },
+    "83": {
+      "Placement_Percentage": "Around 80-83%",
+      "Median_Placement_Package": "Around 14-15 LPA"
+    },
+    "86": {
+      "Placement_Percentage": "Around 83-86%",
+      "Median_Placement_Package": "Around 15-16 LPA"
+    },
+    "89": {
+      "Placement_Percentage": "Around 86-89%",
+      "Median_Placement_Package": "Around 16-17 LPA"
+    },
+    "90": {
+      "Placement_Percentage": "Around 89-90%",
+      "Median_Placement_Package": "Around 17-18 LPA"
+    }
+  }
+  

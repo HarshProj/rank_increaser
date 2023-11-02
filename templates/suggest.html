@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suggested Values</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #predictions {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Suggested Values</h1>
+    <div id="predictions">
+        <p>Predicted Values:</p>
+        <ul>
+            {% for value in predicted_values %}
+                <li>{{ value }}</li>
+            {% endfor %}
+        </ul>
+        <p>There should be at least 1 permanent faculty for {{ predicted_number }} students</p>
+        <p>Placement Percentage: {{ placement_percentage }}</p>
+        <p>Median Placement Package: {{ median_package }}</p>
+    </div>
+</body>
+</html>
