@@ -35,23 +35,56 @@
         p {
             margin: 10px 0;
         }
+        table, th,td {
+  border:1px solid black;
+}
     </style>
 </head>
 <body>
-    <h1>Suggested Values</h1>
     <div id="predictions">
-        <h2>Predicted Values:</h2>
-        <ul>
-            {% for value in predicted_values %}
-                <li>{{ value }}</li>
-            {% endfor %}
-        </ul>
-        <p>There should be at least 1 permanent faculty for {{ predicted_number }} students</p>
-        <h2>Placement Information:</h2>
-        <p>Placement Percentage: {{ placement_percentage }}</p>
+        <h1>Predicted Values:</h1>
+            
+            <div style="width: 70%;">
+              
+                <table style="width: 100%;" >
+                  <tr>
+                    <td>TLR</td>
+                    <td>{{ predicted_values[0][0] }}</td>
+                  </tr>
+                  <tr>
+                    <td>RPC</td>
+                    <td>{{ predicted_values[0][1] }}</td>
+                  </tr>
+                  <tr>
+                    <td>GO</td>
+                    <td>{{ predicted_values[0][2] }}</td>
+                  </tr>
+                  <tr>
+                    <td>OI</td>
+                    <td>{{ predicted_values[0][3] }}</td>
+                  </tr>
+                  <tr>
+                    <td>Preception</td>
+                    <td>{{ predicted_values[0][4] }}</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="improvements">
+                <h1>IMPROVEMENTS:</h1>
+                <div class="tlr-improve">
+                    <h3>TLR Improvement</h3>
+                    <p>There should be at least 1 permanent faculty for {{ predicted_number }} students</p>
+                </div>
+                <div class="tlr-improve">
+                    <h3>GO Improvement</h3>
+                    <p>Placement Percentage: {{ placement_percentage }}</p>
         <p>Median Placement Package: {{ median_package }}</p>
-        <p>minimum % of female candidates should be: {{ girls_percentage }}</p>
-        <p>minimum % of economically weaker students: {{ ews }}</p>
+                </div>
+                <div class="tlr-improve">
+                    <h3>OI Improvement</h3>
+                    <p>minimum % of female candidates should be: {{ girls_percentage }}</p>
+                    <p>minimum % of economically weaker students: {{ ews }}</p>
+                </div>        
     </div>
 </body>
 </html>
