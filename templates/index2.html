@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .input-group input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .btn
+        {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .input-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/">Go back</a>
+        <h2>Fill the form</h2>
+        <form method="post" action="/predict2" class="input-group">
+
+            <label for="field1">Institute Name</label>
+            <input type="text" id="institute" name="institute" required>
+
+            <label for="field1">Teaching Learning and Resources(TLR) :</label>
+            <input type="text" id="field1" name="tlr" required>
+
+
+            <label for="field2">Research and Proffessional Practice(RPC) :</label>
+            <input type="text" id="field2" name="rpc" required>
+
+
+            <label for="field3">Graduation Outcomes(GO) :</label>
+            <input type="text" id="field3" name="go" required>
+
+
+            <label for="field4">Outreach and Inclusivity(OI) :</label>
+            <input type="text" id="field4" name="oi" required>
+
+
+            <label for="field5">Perception :</label>
+            <input type="text" id="field5" name="perception" required>
+
+        <div class="input-group">
+            <input type="submit" value="predict" required>
+        </div>
+        <div class="input-group">
+            <Button class="btn" >
+                <a href="/updated">update</a>
+            </Button>
+        </div>
+        <div class="input-group">
+            <Button class="btn">
+                <a href="/ranking2">List</a>
+            </Button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

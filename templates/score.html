@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIRF Score</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .score {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            width: 40vw;
+            height: 200px;
+            flex-direction: column;
+            box-shadow: rgba(11, 184, 158, 0.6) 0px 4px 12px;
+            animation: animate 1.2s ease-in-out;
+        }
+
+        .h2 {
+            color: rgb(38, 215, 156);
+        }
+
+        @keyframes animate {
+            0% {
+                margin-top: -100px;
+            }
+
+            100% {
+                margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="score flex">
+        <div class="container flex">
+
+            <h4>Your's Score is:</h4>
+            <h2 class="h2">{{ score }}</h2>
+        </div>
+    </section>
+</body>
+
+</html>

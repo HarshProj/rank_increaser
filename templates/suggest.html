@@ -5,21 +5,31 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
 
         h1 {
             color: #333;
+            background-color: #ff9900;
+            padding: 10px;
+            text-align: center;
         }
 
         #predictions {
             margin: 20px;
             padding: 20px;
-            border: 1px solid #ddd;
-            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
 
         ul {
             list-style-type: disc;
+            margin-left: 20px;
         }
 
         p {
@@ -30,15 +40,18 @@
 <body>
     <h1>Suggested Values</h1>
     <div id="predictions">
-        <p>Predicted Values:</p>
+        <h2>Predicted Values:</h2>
         <ul>
             {% for value in predicted_values %}
                 <li>{{ value }}</li>
             {% endfor %}
         </ul>
         <p>There should be at least 1 permanent faculty for {{ predicted_number }} students</p>
+        <h2>Placement Information:</h2>
         <p>Placement Percentage: {{ placement_percentage }}</p>
         <p>Median Placement Package: {{ median_package }}</p>
+        <p>minimum % of female candidates should be: {{ girls_percentage }}</p>
+        <p>minimum % of economically weaker students: {{ ews }}</p>
     </div>
 </body>
 </html>
